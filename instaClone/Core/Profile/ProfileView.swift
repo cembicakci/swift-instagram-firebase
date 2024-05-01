@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileView: View {
     
+    let user: User
+    
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
@@ -16,84 +18,73 @@ struct ProfileView: View {
     ]
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack {
-                           
-                    // Header
-                    VStack(spacing: 10) {
-                        HStack {
-                            Image("profile")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 80, height: 80)
-                                .clipShape(Circle())
-                            
-                            Spacer()
-                            
-                            HStack(spacing: 8) {
-                                UserStatView(value: 10, title: "Posts")
-                                UserStatView(value: 10, title: "Followers")
-                                UserStatView(value: 10, title: "Followings")
-                            }
-                        }
-                        .padding(.horizontal)
+        
+        ScrollView {
+            VStack {
+                
+                // Header
+                VStack(spacing: 10) {
+                    HStack {
+                        Image(user.profileImageUrl ?? "")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
                         
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("Cem Bıçakcı")
-                                .font(.footnote)
-                                .fontWeight(.semibold)
-                            Text("@cmbicakci")
-                                .font(.footnote)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal)
+                        Spacer()
                         
-                        Button {
-                            
-                        } label: {
-                            Text("Edit Profile")
-                                .font(.subheadline)
-                                .fontWeight(.bold)
-                                .frame(width: 360, height: 32)
-                                .foregroundColor(Color("buttonTextColor"))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 6)
-                                        .stroke(.gray, lineWidth: 1)
-                                )
+                        HStack(spacing: 8) {
+                            UserStatView(value: 10, title: "Posts")
+                            UserStatView(value: 10, title: "Followers")
+                            UserStatView(value: 10, title: "Followings")
                         }
-                        
-                        Divider()
                     }
+                    .padding(.horizontal)
                     
-                    // Posts
-                    LazyVGrid(columns: gridItems, spacing: 1) {
-                        ForEach(0...20, id:\.self) { index in
-                            Image("profile")
-                                .resizable()
-                                .scaledToFit()
-                        }
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(user.fullname ?? "-")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                        Text(user.bio ?? "") 
+                            .font(.footnote)
                     }
-
-                }
-            }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal)
+                    
                     Button {
                         
                     } label: {
-                        Image(systemName: "line.3.horizontal")
+                        Text("Edit Profile")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .frame(width: 360, height: 32)
                             .foregroundColor(Color("buttonTextColor"))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 6)
+                                    .stroke(.gray, lineWidth: 1)
+                            )
                     }
-
+                    
+                    Divider()
                 }
+                
+                // Posts
+                LazyVGrid(columns: gridItems, spacing: 1) {
+                    ForEach(0...20, id:\.self) { index in
+                        Image("profile")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                }
+                
             }
         }
+        .navigationTitle("Profile")
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User.MOCK_USER[0])
 }
