@@ -10,6 +10,9 @@
 		E51C81E02BE22F8B00661FEC /* SecureFieldWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81DF2BE22F8B00661FEC /* SecureFieldWithButton.swift */; };
 		E51C81E22BE231CD00661FEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E12BE231CD00661FEC /* User.swift */; };
 		E51C81E42BE242AC00661FEC /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E32BE242AC00661FEC /* CurrentUserProfileView.swift */; };
+		E51C81E62BE244F000661FEC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E52BE244F000661FEC /* Post.swift */; };
+		E51C81E82BE2485300661FEC /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E72BE2485300661FEC /* PostGridView.swift */; };
+		E51C81EA2BE2495F00661FEC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E92BE2495F00661FEC /* ProfileHeaderView.swift */; };
 		E5338FB42BDE5F55009ACB21 /* instaCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5338FB32BDE5F55009ACB21 /* instaCloneApp.swift */; };
 		E5338FB62BDE5F55009ACB21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5338FB52BDE5F55009ACB21 /* ContentView.swift */; };
 		E5338FB82BDE5F57009ACB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5338FB72BDE5F57009ACB21 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 		E51C81DF2BE22F8B00661FEC /* SecureFieldWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldWithButton.swift; sourceTree = "<group>"; };
 		E51C81E12BE231CD00661FEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E51C81E32BE242AC00661FEC /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		E51C81E52BE244F000661FEC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E51C81E72BE2485300661FEC /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		E51C81E92BE2495F00661FEC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		E5338FB02BDE5F55009ACB21 /* instaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5338FB32BDE5F55009ACB21 /* instaCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instaCloneApp.swift; sourceTree = "<group>"; };
 		E5338FB52BDE5F55009ACB21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E51C81E12BE231CD00661FEC /* User.swift */,
+				E51C81E52BE244F000661FEC /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,6 +211,8 @@
 				E5338FD12BDE663C009ACB21 /* UserStatView.swift */,
 				E5338FDD2BDE7DF0009ACB21 /* IGTextFieldModifier.swift */,
 				E51C81DF2BE22F8B00661FEC /* SecureFieldWithButton.swift */,
+				E51C81E72BE2485300661FEC /* PostGridView.swift */,
+				E51C81E92BE2495F00661FEC /* ProfileHeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -285,14 +294,17 @@
 				E51C81E22BE231CD00661FEC /* User.swift in Sources */,
 				E5338FDA2BDE7730009ACB21 /* LoginView.swift in Sources */,
 				E5338FB42BDE5F55009ACB21 /* instaCloneApp.swift in Sources */,
+				E51C81EA2BE2495F00661FEC /* ProfileHeaderView.swift in Sources */,
 				E5338FDC2BDE7BBD009ACB21 /* AddEmailView.swift in Sources */,
 				E5338FE02BDE7F15009ACB21 /* CreateUsernameView.swift in Sources */,
 				E5338FD82BDE7586009ACB21 /* SearchView.swift in Sources */,
 				E5338FDE2BDE7DF0009ACB21 /* IGTextFieldModifier.swift in Sources */,
 				E5338FE42BDE8069009ACB21 /* CompleteSignupView.swift in Sources */,
+				E51C81E82BE2485300661FEC /* PostGridView.swift in Sources */,
 				E5338FD22BDE663C009ACB21 /* UserStatView.swift in Sources */,
 				E5338FD42BDE693A009ACB21 /* FeedView.swift in Sources */,
 				E5338FCD2BDE60D1009ACB21 /* MainTabView.swift in Sources */,
+				E51C81E62BE244F000661FEC /* Post.swift in Sources */,
 				E5338FE22BDE7FE4009ACB21 /* CreatePasswordView.swift in Sources */,
 				E51C81E42BE242AC00661FEC /* CurrentUserProfileView.swift in Sources */,
 			);
