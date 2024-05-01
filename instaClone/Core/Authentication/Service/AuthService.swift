@@ -23,11 +23,15 @@ class AuthService {
     }
     
     func createUser(email: String, password: String, username: String) async throws {
+        print(email)
+        print(password)
+        print(username)
+        
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
         } catch {
-            print("Hata")
+            print("Hata", error.localizedDescription)
         }
     }
     
@@ -36,7 +40,14 @@ class AuthService {
     }
     
     func signOut() async throws {
-        
+        print("sign out")
+        do {
+            try Auth.auth().signOut()
+            self.userSession = nil
+        } catch {
+
+            print("Çıkış yaparken bir hata oluştu: \(error.localizedDescription)")
+        }
     }
     
 }

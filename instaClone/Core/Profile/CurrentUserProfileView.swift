@@ -10,6 +10,8 @@ import SwiftUI
 
 struct CurrentUserProfileView: View {
     
+    @StateObject var registerViewModel = RegisterViewModel()
+
     let user: User
     
     var posts: [Post] {
@@ -32,7 +34,9 @@ struct CurrentUserProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        
+                        Task {
+                            try await registerViewModel.logout()
+                        }
                     } label: {
                         Image(systemName: "line.3.horizontal")
                             .foregroundColor(Color("buttonTextColor"))
@@ -41,6 +45,7 @@ struct CurrentUserProfileView: View {
                 }
             }
         }
+
         
     }
 }
