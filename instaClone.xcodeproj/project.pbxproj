@@ -13,6 +13,8 @@
 		E51C81E62BE244F000661FEC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E52BE244F000661FEC /* Post.swift */; };
 		E51C81E82BE2485300661FEC /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E72BE2485300661FEC /* PostGridView.swift */; };
 		E51C81EA2BE2495F00661FEC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81E92BE2495F00661FEC /* ProfileHeaderView.swift */; };
+		E51C81EC2BE24FC000661FEC /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81EB2BE24FC000661FEC /* UploadPostView.swift */; };
+		E51C81EE2BE2522100661FEC /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51C81ED2BE2522100661FEC /* UploadPostViewModel.swift */; };
 		E5338FB42BDE5F55009ACB21 /* instaCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5338FB32BDE5F55009ACB21 /* instaCloneApp.swift */; };
 		E5338FB62BDE5F55009ACB21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5338FB52BDE5F55009ACB21 /* ContentView.swift */; };
 		E5338FB82BDE5F57009ACB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5338FB72BDE5F57009ACB21 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		E51C81E52BE244F000661FEC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E51C81E72BE2485300661FEC /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		E51C81E92BE2495F00661FEC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		E51C81EB2BE24FC000661FEC /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		E51C81ED2BE2522100661FEC /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		E5338FB02BDE5F55009ACB21 /* instaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5338FB32BDE5F55009ACB21 /* instaCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instaCloneApp.swift; sourceTree = "<group>"; };
 		E5338FB52BDE5F55009ACB21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 		E5338FCB2BDE6031009ACB21 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				E51C81EB2BE24FC000661FEC /* UploadPostView.swift */,
+				E51C81ED2BE2522100661FEC /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -300,9 +306,11 @@
 				E5338FD82BDE7586009ACB21 /* SearchView.swift in Sources */,
 				E5338FDE2BDE7DF0009ACB21 /* IGTextFieldModifier.swift in Sources */,
 				E5338FE42BDE8069009ACB21 /* CompleteSignupView.swift in Sources */,
+				E51C81EE2BE2522100661FEC /* UploadPostViewModel.swift in Sources */,
 				E51C81E82BE2485300661FEC /* PostGridView.swift in Sources */,
 				E5338FD22BDE663C009ACB21 /* UserStatView.swift in Sources */,
 				E5338FD42BDE693A009ACB21 /* FeedView.swift in Sources */,
+				E51C81EC2BE24FC000661FEC /* UploadPostView.swift in Sources */,
 				E5338FCD2BDE60D1009ACB21 /* MainTabView.swift in Sources */,
 				E51C81E62BE244F000661FEC /* Post.swift in Sources */,
 				E5338FE22BDE7FE4009ACB21 /* CreatePasswordView.swift in Sources */,
