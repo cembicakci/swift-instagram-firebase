@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CompleteSignupView: View {
     
-    @State private var password = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var viewModel: RegisterViewModel
     
     var body: some View {
         NavigationStack {
@@ -29,8 +29,10 @@ struct CompleteSignupView: View {
                     .padding(.horizontal, 24)
                 
                 
-                NavigationLink {
-                    
+                Button {
+                    Task {
+                        try await viewModel.createUser()
+                    }
                 } label: {
                     Text("Complete sign up")
                         .font(.subheadline)
