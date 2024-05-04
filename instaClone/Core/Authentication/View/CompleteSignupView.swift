@@ -28,6 +28,10 @@ struct CompleteSignupView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 24)
                 
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundStyle(.red)
+                }
                 
                 Button {
                     Task {
