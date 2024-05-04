@@ -39,6 +39,8 @@
 		E5C4DF3C2BE6718000BF2E56 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF3B2BE6718000BF2E56 /* LoginViewModel.swift */; };
 		E5C4DF3E2BE674A200BF2E56 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5C4DF3D2BE674A200BF2E56 /* FirebaseFirestoreSwift */; };
 		E5C4DF402BE6750400BF2E56 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E5C4DF3F2BE6750400BF2E56 /* FirebaseFirestore */; };
+		E5C4DF422BE6807E00BF2E56 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF412BE6807E00BF2E56 /* UserService.swift */; };
+		E5C4DF462BE6817600BF2E56 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF452BE6817600BF2E56 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		E5338FE12BDE7FE4009ACB21 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		E5338FE32BDE8069009ACB21 /* CompleteSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignupView.swift; sourceTree = "<group>"; };
 		E5C4DF3B2BE6718000BF2E56 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E5C4DF412BE6807E00BF2E56 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E5C4DF452BE6817600BF2E56 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +223,7 @@
 		E5338FC52BDE5FE9009ACB21 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E5C4DF412BE6807E00BF2E56 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -245,7 +250,8 @@
 		E5338FC82BDE6003009ACB21 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				E5338FD72BDE7586009ACB21 /* SearchView.swift */,
+				E5C4DF442BE6816400BF2E56 /* ViewModel */,
+				E5C4DF432BE6816000BF2E56 /* View */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -298,6 +304,22 @@
 				E5338FE32BDE8069009ACB21 /* CompleteSignupView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E5C4DF432BE6816000BF2E56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5338FD72BDE7586009ACB21 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5C4DF442BE6816400BF2E56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5C4DF452BE6817600BF2E56 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +403,7 @@
 			files = (
 				E5338FD62BDE6940009ACB21 /* FeedCell.swift in Sources */,
 				E51C82092BE27D4D00661FEC /* RegisterViewModel.swift in Sources */,
+				E5C4DF422BE6807E00BF2E56 /* UserService.swift in Sources */,
 				E51C81FE2BE2781400661FEC /* AuthService.swift in Sources */,
 				E5338FCF2BDE6319009ACB21 /* ProfileView.swift in Sources */,
 				E51C81E02BE22F8B00661FEC /* SecureFieldWithButton.swift in Sources */,
@@ -400,6 +423,7 @@
 				E51C81E82BE2485300661FEC /* PostGridView.swift in Sources */,
 				E5338FD22BDE663C009ACB21 /* UserStatView.swift in Sources */,
 				E5338FD42BDE693A009ACB21 /* FeedView.swift in Sources */,
+				E5C4DF462BE6817600BF2E56 /* SearchViewModel.swift in Sources */,
 				E51C81EC2BE24FC000661FEC /* UploadPostView.swift in Sources */,
 				E5338FCD2BDE60D1009ACB21 /* MainTabView.swift in Sources */,
 				E51C81E62BE244F000661FEC /* Post.swift in Sources */,
