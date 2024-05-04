@@ -36,6 +36,9 @@
 		E5338FE02BDE7F15009ACB21 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5338FDF2BDE7F15009ACB21 /* CreateUsernameView.swift */; };
 		E5338FE22BDE7FE4009ACB21 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5338FE12BDE7FE4009ACB21 /* CreatePasswordView.swift */; };
 		E5338FE42BDE8069009ACB21 /* CompleteSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5338FE32BDE8069009ACB21 /* CompleteSignupView.swift */; };
+		E5C4DF3C2BE6718000BF2E56 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF3B2BE6718000BF2E56 /* LoginViewModel.swift */; };
+		E5C4DF3E2BE674A200BF2E56 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E5C4DF3D2BE674A200BF2E56 /* FirebaseFirestoreSwift */; };
+		E5C4DF402BE6750400BF2E56 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E5C4DF3F2BE6750400BF2E56 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,7 @@
 		E5338FDF2BDE7F15009ACB21 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
 		E5338FE12BDE7FE4009ACB21 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		E5338FE32BDE8069009ACB21 /* CompleteSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignupView.swift; sourceTree = "<group>"; };
+		E5C4DF3B2BE6718000BF2E56 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51C82012BE278CA00661FEC /* FirebaseAuth in Frameworks */,
+				E5C4DF3E2BE674A200BF2E56 /* FirebaseFirestoreSwift in Frameworks */,
+				E5C4DF402BE6750400BF2E56 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				E51C82082BE27D4D00661FEC /* RegisterViewModel.swift */,
+				E5C4DF3B2BE6718000BF2E56 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -219,13 +226,9 @@
 		E5338FC62BDE5FF2009ACB21 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				E5C4DF3A2BE6716300BF2E56 /* View */,
 				E51C82072BE27D4100661FEC /* ViewModel */,
 				E51C81FC2BE2780A00661FEC /* Service */,
-				E5338FD92BDE7730009ACB21 /* LoginView.swift */,
-				E5338FDB2BDE7BBD009ACB21 /* AddEmailView.swift */,
-				E5338FDF2BDE7F15009ACB21 /* CreateUsernameView.swift */,
-				E5338FE12BDE7FE4009ACB21 /* CreatePasswordView.swift */,
-				E5338FE32BDE8069009ACB21 /* CompleteSignupView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -285,6 +288,18 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		E5C4DF3A2BE6716300BF2E56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5338FD92BDE7730009ACB21 /* LoginView.swift */,
+				E5338FDB2BDE7BBD009ACB21 /* AddEmailView.swift */,
+				E5338FDF2BDE7F15009ACB21 /* CreateUsernameView.swift */,
+				E5338FE12BDE7FE4009ACB21 /* CreatePasswordView.swift */,
+				E5338FE32BDE8069009ACB21 /* CompleteSignupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,6 +318,8 @@
 			name = instaClone;
 			packageProductDependencies = (
 				E51C82002BE278CA00661FEC /* FirebaseAuth */,
+				E5C4DF3D2BE674A200BF2E56 /* FirebaseFirestoreSwift */,
+				E5C4DF3F2BE6750400BF2E56 /* FirebaseFirestore */,
 			);
 			productName = instaClone;
 			productReference = E5338FB02BDE5F55009ACB21 /* instaClone.app */;
@@ -370,6 +387,7 @@
 				E5338FB62BDE5F55009ACB21 /* ContentView.swift in Sources */,
 				E51C81E22BE231CD00661FEC /* User.swift in Sources */,
 				E5338FDA2BDE7730009ACB21 /* LoginView.swift in Sources */,
+				E5C4DF3C2BE6718000BF2E56 /* LoginViewModel.swift in Sources */,
 				E5338FB42BDE5F55009ACB21 /* instaCloneApp.swift in Sources */,
 				E51C82062BE2799900661FEC /* ContentViewModel.swift in Sources */,
 				E51C81EA2BE2495F00661FEC /* ProfileHeaderView.swift in Sources */,
@@ -607,6 +625,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E51C81F12BE276D700661FEC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		E5C4DF3D2BE674A200BF2E56 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E51C81F12BE276D700661FEC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		E5C4DF3F2BE6750400BF2E56 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E51C81F12BE276D700661FEC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

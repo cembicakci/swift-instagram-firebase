@@ -17,7 +17,7 @@ struct CompleteSignupView: View {
             VStack {
                 Spacer()
                 
-                Text("Welcome to Insta")
+                Text("Welcome to Insta \(viewModel.username)")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundStyle(Color("buttonTextColor"))
