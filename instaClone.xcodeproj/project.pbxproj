@@ -44,6 +44,8 @@
 		E5C4DF482BE8176100BF2E56 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF472BE8176100BF2E56 /* EditProfileView.swift */; };
 		E5C4DF4A2BE8191200BF2E56 /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF492BE8191200BF2E56 /* EditProfileRowView.swift */; };
 		E5C4DF4E2BE81A6800BF2E56 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF4D2BE81A6800BF2E56 /* EditProfileViewModel.swift */; };
+		E5C4DF502BE821D000BF2E56 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4DF4F2BE821D000BF2E56 /* ImageUploader.swift */; };
+		E5C4DF522BE8222600BF2E56 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E5C4DF512BE8222600BF2E56 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,7 @@
 		E5C4DF472BE8176100BF2E56 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E5C4DF492BE8191200BF2E56 /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
 		E5C4DF4D2BE81A6800BF2E56 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		E5C4DF4F2BE821D000BF2E56 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51C82012BE278CA00661FEC /* FirebaseAuth in Frameworks */,
+				E5C4DF522BE8222600BF2E56 /* FirebaseStorage in Frameworks */,
 				E5C4DF3E2BE674A200BF2E56 /* FirebaseFirestoreSwift in Frameworks */,
 				E5C4DF402BE6750400BF2E56 /* FirebaseFirestore in Frameworks */,
 			);
@@ -230,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				E5C4DF412BE6807E00BF2E56 /* UserService.swift */,
+				E5C4DF4F2BE821D000BF2E56 /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				E51C82002BE278CA00661FEC /* FirebaseAuth */,
 				E5C4DF3D2BE674A200BF2E56 /* FirebaseFirestoreSwift */,
 				E5C4DF3F2BE6750400BF2E56 /* FirebaseFirestore */,
+				E5C4DF512BE8222600BF2E56 /* FirebaseStorage */,
 			);
 			productName = instaClone;
 			productReference = E5338FB02BDE5F55009ACB21 /* instaClone.app */;
@@ -439,6 +445,7 @@
 				E5338FB42BDE5F55009ACB21 /* instaCloneApp.swift in Sources */,
 				E51C82062BE2799900661FEC /* ContentViewModel.swift in Sources */,
 				E51C81EA2BE2495F00661FEC /* ProfileHeaderView.swift in Sources */,
+				E5C4DF502BE821D000BF2E56 /* ImageUploader.swift in Sources */,
 				E5C4DF4E2BE81A6800BF2E56 /* EditProfileViewModel.swift in Sources */,
 				E5338FDC2BDE7BBD009ACB21 /* AddEmailView.swift in Sources */,
 				E5C4DF482BE8176100BF2E56 /* EditProfileView.swift in Sources */,
@@ -687,6 +694,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E51C81F12BE276D700661FEC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		E5C4DF512BE8222600BF2E56 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E51C81F12BE276D700661FEC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
